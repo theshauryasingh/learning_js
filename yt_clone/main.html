@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 ;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+        header > nav {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+
+        header > nav img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .side-section .home .search .right-section{
+            margin-left: 1px;
+        }
+
+        .side-section {
+            flex-grow: 1;
+        }
+
+        .home {
+            flex-grow: 1;
+        }
+
+        .search {
+            flex-grow: 50;
+        }
+
+        .right-section {
+            flex-grow: 2;
+        }
+
+        .main-content {
+            display: flex;
+        }
+
+        .right {
+            flex: 3;
+        }
+
+        .video-div {
+            height: 60vh;
+        }
+        .left {
+            flex: 1
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="side-section">
+                <button>
+                    <img src="/assets/logo/menu-bar.png" alt="">
+                </button>
+            </div>
+            <div class="home">
+                <div class="home-logo"> <span>Premium</span></div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button><img src="/assets/logo/search-symbol.png" alt=""></button>
+                <button><img src="/assets/logo/microphone.png" alt=""></button>
+            </div>
+            <div class="right-section">
+                <button><img src="/assets/logo/video-camera.png" alt=""></button>
+                <button><img src="/assets/logo/bell.png" alt=""></button>
+                <button><img src="/assets/logo/user.png" alt=""></button>
+            </div>
+        </nav>
+    </header>
+    <section class="main-content">
+        <section class="right">
+            <div class="video-div">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mL5KzazjkhA?si=JUfn5QhibGNyNVG-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-title">EXPOSING India's First Human AI@Puravjha-</div>
+            </div>
+            <div class="channel-info-div">
+                <div class="buttons">buttons</div>
+                <div class="description">description</div>
+            </div>
+            <div class="comment-div">  </div>
+        </section>
+        <section class="left">
+            <div class="queue">
+                Queue
+                <button><img src="" alt=""></button>Save
+                <span>clear</span>
+                <div class="queue-item">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                </div>
+                <div class="queue-item">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                </div>
+                <div class="queue-item">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                </div>
+                <div class="queue-item">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                </div>
+            </div>
+            <div class="recommendation-categories">
+                <span>All</span>
+                <span>Podcasts</span>
+                <span>Comedy</span>
+                <span>Related</span>
+                <span>For you</span>
+            </div>
+            <div class="recommendation-tile-section">
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                    <span class="recommendation-views">view count</span>
+                    <span class="recommendation-time">hours ago</span>
+                    <span class="recommendation-tag">tag-new</span>
+                </div>
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                    <span class="recommendation-views">view count</span>
+                    <span class="recommendation-time">hours ago</span>
+                    <span class="recommendation-tag">tag-new</span>
+                </div>
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                    <span class="recommendation-views">view count</span>
+                    <span class="recommendation-time">hours ago</span>
+                    <span class="recommendation-tag">tag-new</span>
+                </div>
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                    <span class="recommendation-views">view count</span>
+                    <span class="recommendation-time">hours ago</span>
+                    <span class="recommendation-tag">tag-new</span>
+                </div>
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                    <span class="recommendation-views">view count</span>
+                    <span class="recommendation-time">hours ago</span>
+                    <span class="recommendation-tag">tag-new</span>
+                </div>
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                    <span class="recommendation-views">view count</span>
+                    <span class="recommendation-time">hours ago</span>
+                    <span class="recommendation-tag">tag-new</span>
+                </div>
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                    <span class="recommendation-views">view count</span>
+                    <span class="recommendation-time">hours ago</span>
+                    <span class="recommendation-tag">tag-new</span>
+                </div>
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                    <span class="recommendation-views">view count</span>
+                    <span class="recommendation-time">hours ago</span>
+                    <span class="recommendation-tag">tag-new</span>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

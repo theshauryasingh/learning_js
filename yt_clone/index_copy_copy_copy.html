@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Mockup</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #181818;
+            color: #FFF;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, nav, main, aside, footer {
+            padding: 10px;
+        }
+
+        header > nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #202020;
+        }
+
+        header > nav img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .video-section {
+            flex: 3;
+            padding: 20px;
+            min-width: 60%;
+        }
+
+        .queue-section {
+            flex: 1;
+            padding: 20px;
+            min-width: 40%;
+            background-color: #202020;
+        }
+
+        .video {
+            width: 100%;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .channel-info, .comments {
+            background: #303030;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .queue-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #FFF;
+        }
+
+        .queue-item, .recommendation-tile {
+            display: flex;
+            align-items: center;
+            background: #404040;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: #FFF;
+        }
+
+        .queue-item img, .recommendation-tile img {
+            height: 60px;
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        .recommendation-categories span {
+            margin-right: 10px;
+            cursor: pointer;
+            color: #909090;
+        }
+
+        .recommendation-categories span:hover {
+            color: #FFF;
+        }
+
+        @media (max-width: 768px) {
+            .video-section, .queue-section {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="side-section">
+                <button>
+                    <img src="/assets/logo/menu-bar.png" alt="Menu">
+                </button>
+            </div>
+            <div class="home">
+                <div class="home-logo">
+                    <span>Premium</span>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button><img src="/assets/logo/search-symbol.png" alt="Search"></button>
+                <button><img src="/assets/logo/microphone.png" alt="Microphone"></button>
+            </div>
+            <div class="right-section">
+                <button><img src="/assets/logo/video-camera.png" alt="Upload"></button>
+                <button><img src="/assets/logo/bell.png" alt="Notifications"></button>
+                <button><img src="/assets/logo/user.png" alt="User"></button>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="video-section">
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/mL5KzazjkhA?si=JUfn5QhibGNyNVG-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-title">EXPOSING India's First Human AI@Puravjha-</div>
+            </div>
+            <div class="channel-info">
+                <div class="buttons">buttons</div>
+                <div class="description">description</div>
+            </div>
+            <div class="comments">comments</div>
+        </section>
+        <aside class="queue-section">
+            <div class="queue">
+                <div class="queue-header">
+                    <span>Queue</span>
+                    <div>
+                        <button>Save</button>
+                        <button>Clear</button>
+                    </div>
+                </div>
+                <div class="queue-item">
+                    <img src="" alt="" class="thumbnail">
+                    <div>
+                        <span class="recommendation-title">title</span><br>
+                        <span class="recommendation-channel-name">channel name</span>
+                    </div>
+                </div>
+                <div class="queue-item">
+                    <img src="" alt="" class="thumbnail">
+                    <div>
+                        <span class="recommendation-title">title</span><br>
+                        <span class="recommendation-channel-name">channel name</span>
+                    </div>
+                </div>
+                <div class="queue-item">
+                    <img src="" alt="" class="thumbnail">
+                    <div>
+                        <span class="recommendation-title">title</span><br>
+                        <span class="recommendation-channel-name">channel name</span>
+                    </div>
+                </div>
+                <div class="queue-item">
+                    <img src="" alt="" class="thumbnail">
+                    <div>
+                        <span class="recommendation-title">title</span><br>
+                        <span class="recommendation-channel-name">channel name</span>
+                    </div>
+                </div>
+                <!-- Add more queue items as needed -->
+            </div>
+            <div class="recommendation-categories">
+                <span>All</span>
+                <span>Podcasts</span>
+                <span>Comedy</span>
+                <span>Related</span>
+                <span>For you</span>
+            </div>
+            <div class="recommendation-tiles">
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <div>
+                        <span class="recommendation-title">title</span><br>
+                        <span class="recommendation-channel-name">channel name</span><br>
+                        <span class="recommendation-views">view count</span> •
+                        <span class="recommendation-time">hours ago</span>
+                    </div>
+                </div>
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <div>
+                        <span class="recommendation-title">title</span><br>
+                        <span class="recommendation-channel-name">channel name</span><br>
+                        <span class="recommendation-views">view count</span> •
+                        <span class="recommendation-time">hours ago</span>
+                    </div>
+                </div>
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <div>
+                        <span class="recommendation-title">title</span><br>
+                        <span class="recommendation-channel-name">channel name</span><br>
+                        <span class="recommendation-views">view count</span> •
+                        <span class="recommendation-time">hours ago</span>
+                    </div>
+                </div>
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <div>
+                        <span class="recommendation-title">title</span><br>
+                        <span class="recommendation-channel-name">channel name</span><br>
+                        <span class="recommendation-views">view count</span> •
+                        <span class="recommendation-time">hours ago</span>
+                    </div>
+                </div>
+                <!-- Add more recommendation tiles as needed -->
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>

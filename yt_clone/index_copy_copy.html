@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Mockup</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, nav, main, aside, footer {
+            padding: 10px;
+        }
+
+        header > nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+        }
+
+        header > nav img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        .video-section {
+            flex: 3;
+            padding: 20px;
+            min-width: 60%;
+        }
+
+        .queue-section {
+            flex: 1;
+            padding: 20px;
+            min-width: 40%;
+        }
+
+        .video {
+            width: 100%;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .description, .comments {
+            background: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .queue-item {
+            background: #e0e0e0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .video-section, .queue-section {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="side-section">
+                <button>
+                    <img src="/assets/logo/menu-bar.png" alt="Menu">
+                </button>
+            </div>
+            <div class="home">
+                <div class="home-logo">
+                    <span>Premium</span>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button><img src="/assets/logo/search-symbol.png" alt="Search"></button>
+                <button><img src="/assets/logo/microphone.png" alt="Microphone"></button>
+            </div>
+            <div class="right-section">
+                <button><img src="/assets/logo/video-camera.png" alt="Upload"></button>
+                <button><img src="/assets/logo/bell.png" alt="Notifications"></button>
+                <button><img src="/assets/logo/user.png" alt="User"></button>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="video-section">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mL5KzazjkhA?si=JUfn5QhibGNyNVG-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-title">EXPOSING India's First Human AI@Puravjha-</div>
+            </div>
+            <div class="channel-info">
+                <div class="buttons">buttons</div>
+                <div class="description">description</div>
+            </div>
+            <div class="comments">comments</div>
+        </section>
+        <aside class="queue-section">
+            <div class="queue">
+                <div class="queue-header">
+                    Queue
+                    <button><img src="" alt="Save"></button>Save
+                    <span>clear</span>
+                </div>
+                <div class="queue-item">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                </div>
+                <!-- Add more queue items as needed -->
+            </div>
+            <div class="recommendation-categories">
+                <span>All</span>
+                <span>Podcasts</span>
+                <span>Comedy</span>
+                <span>Related</span>
+                <span>For you</span>
+            </div>
+            <div class="recommendation-tiles">
+                <div class="recommendation-tile">
+                    <img src="" alt="" class="thumbnail">
+                    <span class="recommendation-title">title</span>
+                    <span class="recommendation-channel-name">channel name</span>
+                    <span class="recommendation-views">view count</span>
+                    <span class="recommendation-time">hours ago</span>
+                    <span class="recommendation-tag">tag-new</span>
+                </div>
+                <!-- Add more recommendation tiles as needed -->
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>

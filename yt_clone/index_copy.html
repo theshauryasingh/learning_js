@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Mock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #181818;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #202020;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .side_section, .home, .search, .right-section {
+            margin-right: 20px;
+        }
+
+        .side_section {
+            width: 30px;
+            height: 30px;
+            background-color: #FF0000;
+        }
+
+        .home {
+            flex-grow: 1;
+        }
+
+        .search {
+            flex-grow: 3;
+        }
+
+        .right-section {
+            flex-grow: 1;
+        }
+
+        .main-content {
+            display: flex;
+        }
+
+        .video-section {
+            flex: 3;
+            padding: 20px;
+        }
+
+        .video_div {
+            background-color: #333;
+            height: 60vh;
+            margin-bottom: 20px;
+        }
+
+        .channel_info_div, .comment_div {
+            background-color: #202020;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #202020;
+            padding: 20px;
+        }
+
+        .sidebar .video-thumbnail {
+            background-color: #333;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="side_section"></div>
+        <div class="home">YouTube</div>
+        <div class="search"><input type="text" placeholder="Search"></div>
+        <div class="right-section">Profile</div>
+    </nav>
+
+    <div class="main-content">
+        <section class="video-section">
+            <div class="video_div">Video Player</div>
+            <div class="channel_info_div">Channel Information</div>
+            <div class="comment_div">Comments</div>
+        </section>
+        <section class="sidebar">
+            <div class="video-thumbnail">Video 1</div>
+            <div class="video-thumbnail">Video 2</div>
+            <div class="video-thumbnail">Video 3</div>
+            <div class="video-thumbnail">Video 4</div>
+        </section>
+    </div>
+</body>
+</html>
